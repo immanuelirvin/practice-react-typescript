@@ -1,18 +1,18 @@
-import React from 'react';
+import React, {Component, useState} from 'react';
 
-function Test() {
-  return (
-        // alt + shift + f
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Learn React
-        </a>
+// const Test = ()=> {
+//   const [data, setData] = useState("hello")
 
-  );
+//   return (
+//     <div>hello</div>
+//   )
+// }
+
+class Test extends Component<any,any>{
+  render(){
+    return (
+      <div>{this.props.number}</div>
+    )
+  }
 }
-
 export default Test;
